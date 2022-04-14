@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1 class="titulo">Calculadora</h1>
+    <form class="form-control">
+
+        <div class="form-group">
+            <label for="primeiro-numero">Informe o primeiro número: </label>
+            <input type="number" step="0,01" id="primeiro-numero" required>
+        </div>
+
+        <div class="form-group">
+            <label for="operador">Selecione a operação desejada: </label>           
+            <select name="operador" id="operador">                
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>    
+        <div class="form-group">
+            <label for="segundo-numero">Informe o segundo número: </label>
+            <input type="number" step="0,01" id="segundo-numero" required>
+        </div>  
+        
+         <button class="btn" type="submit">Calcular</button>
+
+         <p id="resposta"></p>
+    </form>
+   
+    <script src="main.js"></script>
+</body>
+</html>
